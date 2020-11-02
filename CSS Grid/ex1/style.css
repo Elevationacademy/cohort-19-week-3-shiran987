@@ -1,0 +1,72 @@
+
+#chat{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    background-color: gainsboro;
+    height: 100%;
+   grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f i";
+
+} 
+
+
+ #friends{
+    grid-area: f;
+    display: grid;
+    background-color: purple;
+     border-style: hidden; 
+
+} 
+
+#chatbox{
+    grid-area: c;
+    display: grid;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: large;
+
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* align-content:center; */
+    padding-right: 15px;
+    padding-left: 15px;
+
+
+}
+.text-container left {
+    background-color:grey;
+    grid-template-rows: repeat(3, 1fr);
+    
+
+
+
+}
+.text-container :right{
+ color:green;
+ justify-content: end;
+ grid-template-rows: repeat(2, 1fr);
+
+
+
+    /* align-content:center; */
+    /* grid-template-columns: repeat(2, 1fr); */
+
+}
+
+
+  
+
+
+#input{
+    grid-area: i;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding-right: 15px; */
+    /* padding-left: 80px; */
+    /* margin-left: 80px; */
+
+}
+
+
+
